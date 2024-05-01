@@ -9,7 +9,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Jörg Nieveler</Authors>
     <Title>Generic Repository Implementation for Entity Framework</Title>
-    <PackageTags>"Generic Repository";"EF Core"; EF;Abstractions;"Clean Code";"Domain Driven Design"</PackageTags>
+    <PackageTags>GenericRepository;EFCore; EntityFramework;Abstractions;CleanCode;DomainDrivenDesign;DDD</PackageTags>
     <PackageReleaseNotes>Bug Fixes</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/decius999/CleanCodeJNGenericRepository</RepositoryUrl>
     <PackageProjectUrl>https://github.com/decius999/CleanCodeJNGenericRepository</PackageProjectUrl>
