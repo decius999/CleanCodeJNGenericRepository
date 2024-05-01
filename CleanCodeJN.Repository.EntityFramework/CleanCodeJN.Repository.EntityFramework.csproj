@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>A Generic Repository Implementation for Entity Framework. The generic repository completely abstracts Entity Framework out of your business layer.</Description>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <Authors>Jörg Nieveler</Authors>
+    <Title>Generic Repository Implementation for Entity Framework</Title>
+    <PackageTags>Generic Repository;EF Core; EF;Abstractions;Clean Code;Domain Driven Design</PackageTags>
+    <PackageReleaseNotes>First Version of fully implemented and production proved generic Repository for EF 8.x.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanCodeJN.Repository.Abstractions\CleanCodeJN.Repository.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
