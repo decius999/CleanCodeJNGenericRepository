@@ -59,7 +59,3 @@ List<customer> customerWhoHavePayed = repository
                                            .Where(x => x.Invoice.IsPayed)
                                            .ToList()
 ```
-
-## License
-
-MIT
