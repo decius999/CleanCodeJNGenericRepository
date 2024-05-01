@@ -40,15 +40,7 @@ public partial class YourContext : DbContext, IDataContext
 Use Extension RegisterRepositories() in your startup class or program.cs:
 
 ```C#
-using CleanCodeJN.Repository.EntityFramework.Extensions;
-using Microsoft.Extensions.Hosting;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-// Register Repositories
 builder.Services.RegisterRepositories();
-
-await builder.Build().RunAsync();
 ```
 
 Inject IRepository<T> in your business layer:
