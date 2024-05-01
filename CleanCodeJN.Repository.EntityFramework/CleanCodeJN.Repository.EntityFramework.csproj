@@ -6,12 +6,19 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>A Generic Repository Implementation for Entity Framework. The generic repository completely abstracts Entity Framework out of your business layer.</Description>
     <RepositoryType>git</RepositoryType>
-    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Jörg Nieveler</Authors>
     <Title>Generic Repository Implementation for Entity Framework</Title>
     <PackageTags>Generic Repository;EF Core; EF;Abstractions;Clean Code;Domain Driven Design</PackageTags>
     <PackageReleaseNotes>First Version of fully implemented and production proved generic Repository for EF 8.x.</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
