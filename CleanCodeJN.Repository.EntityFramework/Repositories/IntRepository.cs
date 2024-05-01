@@ -1,4 +1,5 @@
-﻿using CleanCodeJN.Repository.Abstractions.Contracts;
+﻿
+using CleanCodeJN.Repository.EntityFramework.Contracts;
 
 namespace CleanCodeJN.Repository.EntityFramework.Repositories;
 public class IntRepository<TEntity> : Repository<IDataContext, TEntity, int>, IIntRepository<TEntity>

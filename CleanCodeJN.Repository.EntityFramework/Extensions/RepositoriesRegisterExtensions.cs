@@ -1,4 +1,4 @@
-﻿using CleanCodeJN.Repository.Abstractions.Contracts;
+﻿using CleanCodeJN.Repository.EntityFramework.Contracts;
 using CleanCodeJN.Repository.EntityFramework.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 

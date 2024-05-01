@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using CleanCodeJN.Repository.Abstractions.Contracts;
+using CleanCodeJN.Repository.EntityFramework.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 

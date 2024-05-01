@@ -1,4 +1,4 @@
-﻿using CleanCodeJN.Repository.Abstractions.Contracts;
+﻿using CleanCodeJN.Repository.EntityFramework.Contracts;
 
 namespace CleanCodeJN.Repository.EntityFramework.Repositories;
 public class LongRepository<TEntity> : Repository<IDataContext, TEntity, long>, ILongRepository<TEntity>

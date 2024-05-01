@@ -1,4 +1,4 @@
-﻿using CleanCodeJN.Repository.Abstractions.Contracts;
+﻿using CleanCodeJN.Repository.EntityFramework.Contracts;
 
 namespace CleanCodeJN.Repository.EntityFramework.Repositories;
 public class StringRepository<TEntity> : Repository<IDataContext, TEntity, string>, IStringRepository<TEntity>

@@ -10,10 +10,11 @@
     <Authors>Jörg Nieveler</Authors>
     <Title>Generic Repository Implementation for Entity Framework</Title>
     <PackageTags>"Generic Repository";"EF Core"; EF;Abstractions;"Clean Code";"Domain Driven Design"</PackageTags>
-    <PackageReleaseNotes>First Version of fully implemented and production proved generic Repository for EF 8.x.</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug Fixes</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/decius999/CleanCodeJNGenericRepository</RepositoryUrl>
     <PackageProjectUrl>https://github.com/decius999/CleanCodeJNGenericRepository</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <VersionPrefix>1.0.1</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,10 +27,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CleanCodeJN.Repository.Abstractions\CleanCodeJN.Repository.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

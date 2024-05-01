@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCodeJN.Repository.Abstractions", "CleanCodeJN.Repository.Abstractions\CleanCodeJN.Repository.Abstractions.csproj", "{048BAA15-0600-4083-84A9-C3524ABB548C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanCodeJN.Repository.EntityFramework", "CleanCodeJN.Repository.EntityFramework\CleanCodeJN.Repository.EntityFramework.csproj", "{06706338-75CB-4667-9C28-8D1E14A3C4A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCodeJN.Repository.EntityFramework", "CleanCodeJN.Repository.EntityFramework\CleanCodeJN.Repository.EntityFramework.csproj", "{06706338-75CB-4667-9C28-8D1E14A3C4A2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCodeJN.Sample", "CleanCodeJN.Sample\CleanCodeJN.Sample.csproj", "{E42495E3-0E4A-4411-A2EA-5061DFDC5B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanCodeJN.Sample", "CleanCodeJN.Sample\CleanCodeJN.Sample.csproj", "{E42495E3-0E4A-4411-A2EA-5061DFDC5B66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{048BAA15-0600-4083-84A9-C3524ABB548C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{048BAA15-0600-4083-84A9-C3524ABB548C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{048BAA15-0600-4083-84A9-C3524ABB548C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{048BAA15-0600-4083-84A9-C3524ABB548C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06706338-75CB-4667-9C28-8D1E14A3C4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06706338-75CB-4667-9C28-8D1E14A3C4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06706338-75CB-4667-9C28-8D1E14A3C4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
