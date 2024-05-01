@@ -40,7 +40,11 @@ public partial class YourContext : DbContext, IDataContext
 Use Extension RegisterRepositories() in your startup class or program.cs:
 
 ```C#
+// Just register the generic repositories
 builder.Services.RegisterRepositories();
+
+// Or register generic repositories and your dbContext which has the IDataContext marker interface
+builder.Services.RegisterDbContextAndRepositories<MyDbContext>();
 ```
 
 Inject IRepository<T> in your business layer:

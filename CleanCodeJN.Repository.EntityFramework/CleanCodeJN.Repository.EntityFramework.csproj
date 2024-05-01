@@ -14,7 +14,7 @@
     <RepositoryUrl>https://github.com/decius999/CleanCodeJNGenericRepository</RepositoryUrl>
     <PackageProjectUrl>https://github.com/decius999/CleanCodeJNGenericRepository</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <VersionPrefix>1.0.1</VersionPrefix>
+    <VersionPrefix>1.0.2</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
