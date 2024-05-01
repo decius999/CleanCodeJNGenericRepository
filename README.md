@@ -62,7 +62,10 @@ public class MyService(IIntRepository<Customer> repository)
 Just use it:
 
 ```C#
-List<customer> customerWhoHavePayed = repository.Query(x => x.Invoices).Where(x => x.Invoice.IsPayed).ToList()
+List<customer> customerWhoHavePayed = repository
+                                           .Query(x => x.Invoices)
+                                           .Where(x => x.Invoice.IsPayed)
+                                           .ToList()
 ```
 
 ## License
