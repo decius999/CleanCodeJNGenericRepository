@@ -44,7 +44,7 @@ Use Extension RegisterDbContextAndRepositories() in your startup class or progra
 builder.Services.RegisterDbContextAndRepositories<MyDbContext>();
 ```
 
-Inject IRepository<T> in your business layer:
+Inject IIntRepository<T> (or IStringRepository, IGuidRepository, ILongRepository) in your business layer:
 
 ```C#
 public class MyService(IIntRepository<Customer> repository)
@@ -56,7 +56,7 @@ Just use it:
 
 ```C#
 List<customer> customerWhoHavePayed = repository
-                                           .Query(x => x.Invoices)
+                                           .Query(x => x.Invoices) // Use this lamda to Include dependent tables, e.g: Invoices
                                            .Where(x => x.Invoice.IsPayed)
                                            .ToList()
 ```
