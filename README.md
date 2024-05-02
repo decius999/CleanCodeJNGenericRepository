@@ -56,7 +56,7 @@ Just use it:
 
 ```C#
 List<customer> customerWhoHavePayed = repository
-                            .Query(x => x.Invoices) // Use this lamda to Include dependent tables, e.g: Invoices
+                            .Query(x => x.Invoices) // Use to Include dependent tables, e.g: Invoices
                             .Where(x => x.Invoice.IsPayed)
                             .ToList()
 ```
