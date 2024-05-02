@@ -40,7 +40,7 @@ public partial class MyDbContext : DbContext, IDataContext
 Use Extension RegisterDbContextAndRepositories() in your startup class or program.cs:
 
 ```C#
-// Just egister generic repositories and your dbContext which has the IDataContext marker interface
+// Just register generic repositories and your dbContext which has the IDataContext marker interface
 builder.Services.RegisterDbContextAndRepositories<MyDbContext>();
 ```
 
