@@ -10,11 +10,11 @@
     <Authors>Jörg Nieveler</Authors>
     <Title>Generic Repository Implementation for Entity Framework</Title>
     <PackageTags>GenericRepository;EFCore; EntityFramework;Abstractions;CleanCode;DomainDrivenDesign;DDD</PackageTags>
-    <PackageReleaseNotes>Bug Fixes</PackageReleaseNotes>
+    <PackageReleaseNotes>Only use RegisterDbContextAndRepositories() to register everything.</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/decius999/CleanCodeJNGenericRepository</RepositoryUrl>
     <PackageProjectUrl>https://github.com/decius999/CleanCodeJNGenericRepository</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <VersionPrefix>1.0.2</VersionPrefix>
+    <VersionPrefix>1.1.0</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>

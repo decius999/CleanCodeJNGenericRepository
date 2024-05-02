@@ -23,7 +23,7 @@ This generic Repository implementation for Entity Framework abstracts completely
 Add IEntity<T> interfaces to your domain classes:
 
 ```C#
-public class Comment : IEntity<int>
+public class Customer : IEntity<int>
 {
     public int Id { get; set; }
 }
@@ -32,18 +32,15 @@ public class Comment : IEntity<int>
 Add IDataContext Interface to your DBContext class:
 
 ```C#
-public partial class YourContext : DbContext, IDataContext
+public partial class MyDbContext : DbContext, IDataContext
 {   
 }
 ```
 
-Use Extension RegisterRepositories() in your startup class or program.cs:
+Use Extension RegisterDbContextAndRepositories() in your startup class or program.cs:
 
 ```C#
-// Just register the generic repositories
-builder.Services.RegisterRepositories();
-
-// Or register generic repositories and your dbContext which has the IDataContext marker interface
+// Just egister generic repositories and your dbContext which has the IDataContext marker interface
 builder.Services.RegisterDbContextAndRepositories<MyDbContext>();
 ```
 
