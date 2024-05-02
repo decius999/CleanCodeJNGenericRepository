@@ -60,3 +60,6 @@ List<customer> customerWhoHavePayed = repository
                          .Where(x => x.Invoice.IsPayed)
                          .ToList()
 ```
+
+## Sample Code
+[GitHub Full Sample](https://github.com/decius999/CleanCodeJNGenericRepository/tree/dev/CleanCodeJN.Sample)
