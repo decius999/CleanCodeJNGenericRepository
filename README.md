@@ -44,10 +44,10 @@ Use Extension RegisterDbContextAndRepositories() in your startup class or progra
 builder.Services.RegisterDbContextAndRepositories<MyDbContext>();
 ```
 
-Inject IIntRepository<T> (or IStringRepository, IGuidRepository, ILongRepository) in your business layer:
+Inject IRepository<TEntity, TKey> (or IIntRepository, IStringRepository, IGuidRepository, ILongRepository) in your business layer:
 
 ```C#
-public class MyService(IIntRepository<Customer> repository)
+public class MyService(IRepository<Customer, int> repository)
 {   
 }
 ```
