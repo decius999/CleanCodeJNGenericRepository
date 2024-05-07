@@ -4,14 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace CleanCodeJN.Repository.EntityFramework.Repositories;
-public class Repository<TDataContext, TEntity, TKey> : IRepository<TEntity, TKey>
-    where TDataContext : IDataContext
+public class Repository<TEntity, TKey> : IRepository<TEntity, TKey>
     where TEntity : class, IEntity<TKey>
 {
     protected readonly DbContext _context;
     private IDbContextTransaction _transaction;
 
-    public Repository(TDataContext context) => _context = context as DbContext;
+    public Repository(IDataContext context) => _context = context as DbContext;
 
     public IQueryable<TEntity> RawSQL(string sql) => _context.Set<TEntity>().FromSqlRaw(sql);
 

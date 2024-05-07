@@ -20,5 +20,7 @@ public static class RepositoriesRegisterExtensions
         services.AddScoped(typeof(IStringRepository<>), typeof(StringRepository<>));
         services.AddScoped(typeof(ILongRepository<>), typeof(LongRepository<>));
         services.AddScoped(typeof(IGuidRepository<>), typeof(GuidRepository<>));
+
+        services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
     }
 }
