@@ -10,11 +10,12 @@
     <Authors>Jörg Nieveler</Authors>
     <Title>Generic Repository Implementation for Entity Framework</Title>
     <PackageTags>GenericRepository;EFCore; EntityFramework;Abstractions;CleanCode;DomainDrivenDesign;DDD</PackageTags>
-    <PackageReleaseNotes>Only use RegisterDbContextAndRepositories() to register everything.</PackageReleaseNotes>
+    <PackageReleaseNotes>New Logo added.</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/decius999/CleanCodeJNGenericRepository</RepositoryUrl>
     <PackageProjectUrl>https://github.com/decius999/CleanCodeJNGenericRepository</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <VersionPrefix>1.1.1</VersionPrefix>
+    <PackageIcon>CleanCodeJN-Icon-Green.png</PackageIcon>
+    <VersionPrefix>1.1.2</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +28,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="CleanCodeJN-Icon-Green.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
