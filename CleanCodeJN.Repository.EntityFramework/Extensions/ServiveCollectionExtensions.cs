@@ -3,14 +3,14 @@ using CleanCodeJN.Repository.EntityFramework.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanCodeJN.Repository.EntityFramework.Extensions;
-public static class RepositoriesRegisterExtensions
+public static class ServiveCollectionExtensions
 {
     /// <summary>
     /// Register DbContext and generic Repositories.
     /// </summary>
     /// <typeparam name="TDataContext">DbContext which inherits from IDataContext interface</typeparam>
     /// <param name="services">IServiceCollection</param>
-    public static void RegisterDbContextAndRepositories<TDataContext>(this IServiceCollection services)
+    public static IServiceCollection RegisterDbContextAndRepositories<TDataContext>(this IServiceCollection services)
         where TDataContext : class, IDataContext
     {
         services.AddScoped<IDataContext, TDataContext>();
@@ -22,5 +22,7 @@ public static class RepositoriesRegisterExtensions
         services.AddScoped(typeof(IGuidRepository<>), typeof(GuidRepository<>));
 
         services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
+
+        return services;
     }
 }
