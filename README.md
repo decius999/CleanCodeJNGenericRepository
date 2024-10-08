@@ -56,7 +56,7 @@ Just use it:
 
 ```C#
 List<customer> customerWhoHavePayed = repository
-                         .Query(x => x.Invoices) // Use to Include dependent tables, e.g: Invoices
+                         .Query(asNoTracking: true, asSplitQuery: true, includes: x => x.Invoices)
                          .Where(x => x.Invoice.IsPayed)
                          .ToList()
 ```

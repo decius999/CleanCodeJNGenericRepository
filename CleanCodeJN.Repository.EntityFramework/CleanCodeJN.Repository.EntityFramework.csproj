@@ -10,12 +10,12 @@
     <Authors>Jörg Nieveler</Authors>
     <Title>Generic Repository Implementation for Entity Framework</Title>
     <PackageTags>GenericRepository;EFCore; EntityFramework;Abstractions;CleanCode;DomainDrivenDesign;DDD</PackageTags>
-    <PackageReleaseNotes>Small Bug Fixes.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added: asNoTracking, ignoreQueryFilters, asSplitQuery as optional Parameter to Query() method.</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/decius999/CleanCodeJNGenericRepository</RepositoryUrl>
     <PackageProjectUrl>https://github.com/decius999/CleanCodeJNGenericRepository</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>CleanCodeJN-Icon-Green.png</PackageIcon>
-    <VersionPrefix>1.1.5</VersionPrefix>
+    <VersionPrefix>1.1.6</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>

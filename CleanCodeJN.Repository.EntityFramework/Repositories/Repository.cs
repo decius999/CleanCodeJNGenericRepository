@@ -16,7 +16,39 @@ public class Repository<TEntity, TKey> : IRepository<TEntity, TKey>
 
     public IQueryable<TEntity> Query(params Expression<Func<TEntity, object>>[] includes)
     {
-        var query = _context.Set<TEntity>().AsQueryable().AsSplitQuery();
+        var query = _context.Set<TEntity>().AsQueryable();
+
+        if (includes?.Any() == true)
+        {
+            query = query.AsSplitQuery();
+        }
+
+        foreach (var includeExpression in includes)
+        {
+            query = query.Include(includeExpression);
+        }
+
+        return query;
+    }
+
+    public IQueryable<TEntity> Query(bool asNoTracking = false, bool ignoreQueryFilters = false, bool asSplitQuery = false, params Expression<Func<TEntity, object>>[] includes)
+    {
+        var query = _context.Set<TEntity>().AsQueryable();
+
+        if (asNoTracking)
+        {
+            query = query.AsNoTracking();
+        }
+
+        if (ignoreQueryFilters)
+        {
+            query = query.IgnoreQueryFilters();
+        }
+
+        if (asSplitQuery)
+        {
+            query = query.AsSplitQuery();
+        }
 
         foreach (var includeExpression in includes)
         {

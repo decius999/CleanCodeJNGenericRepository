@@ -12,6 +12,13 @@ builder.Services.AddScoped<IMyService, MyService>();
 var host = builder.Build();
 var service = host.Services.GetService<IMyService>();
 
-service.GetCustomers();
+await service.AddCustomer(new() { Name = "New Customer" });
+await service.DeleteCustomer(1);
+var customers = service.GetCustomers();
+
+foreach (var customer in customers)
+{
+    Console.WriteLine($"{customer.Id} = {customer.Name}");
+}
 
 await host.RunAsync();
