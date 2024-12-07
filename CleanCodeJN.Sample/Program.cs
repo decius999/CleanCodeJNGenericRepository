@@ -20,10 +20,12 @@ await service.AddCustomer(new() { Name = "New Customer 4" });
 await service.DeleteCustomer(1);
 var customers = service.GetCustomers();
 
-var updateCustomer = customers.First(x => x.Id == 2);
-updateCustomer.Name = "New Customer 2 - Updated";
+var updateCustomer2 = customers.First(x => x.Id == 2);
+var updateCustomer3 = customers.First(x => x.Id == 3);
+updateCustomer2.Name = "New Customer 2 - Updated";
+updateCustomer3.Name = "New Customer 3 - Updated";
 
-await service.UpdateTrackedCustomer();
+await service.SaveChangedCustomers();
 
 foreach (var customer in customers)
 {

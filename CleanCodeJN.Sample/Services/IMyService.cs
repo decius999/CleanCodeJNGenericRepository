@@ -9,5 +9,5 @@ public interface IMyService
 
     List<Customer> GetCustomers();
 
-    Task UpdateTrackedCustomer();
+    Task SaveChangedCustomers();
 }

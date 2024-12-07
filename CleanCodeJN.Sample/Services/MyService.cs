@@ -10,5 +10,5 @@ public class MyService(IRepository<Customer, int> repository) : IMyService
 
     public List<Customer> GetCustomers() => repository.Query(asNoTracking: true, ignoreQueryFilters: true).ToList();
 
-    public async Task UpdateTrackedCustomer() => await repository.SaveTrackedEntities(CancellationToken.None);
+    public async Task SaveChangedCustomers() => await repository.SaveChangedEntities(CancellationToken.None);
 }
