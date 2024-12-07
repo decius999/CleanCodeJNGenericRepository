@@ -124,6 +124,8 @@ public class Repository<TEntity, TKey> : IRepository<TEntity, TKey>
         return await _context.SaveChangesAsync(cancellationToken);
     }
 
+    public async Task SaveTrackedEntities(CancellationToken cancellationToken) => await _context.SaveChangesAsync(cancellationToken);
+
     public async Task BeginTransaction() => _transaction = await _context.Database.BeginTransactionAsync();
 
     public async Task CommitTransaction() => await _transaction.CommitAsync();

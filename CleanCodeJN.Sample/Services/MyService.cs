@@ -9,4 +9,6 @@ public class MyService(IRepository<Customer, int> repository) : IMyService
     public Task DeleteCustomer(int customerId) => repository.Delete(customerId, CancellationToken.None);
 
     public List<Customer> GetCustomers() => repository.Query(asNoTracking: true, ignoreQueryFilters: true).ToList();
+
+    public async Task UpdateTrackedCustomer() => await repository.SaveTrackedEntities(CancellationToken.None);
 }

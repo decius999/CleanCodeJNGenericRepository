@@ -8,4 +8,6 @@ public interface IMyService
     Task DeleteCustomer(int customerId);
 
     List<Customer> GetCustomers();
+
+    Task UpdateTrackedCustomer();
 }

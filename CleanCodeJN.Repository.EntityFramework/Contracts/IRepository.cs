@@ -22,6 +22,8 @@ public interface IRepository<TEntity, TKey>
 
     Task<int> Delete(IEnumerable<TKey> ids, CancellationToken cancellationToken);
 
+    Task SaveTrackedEntities(CancellationToken cancellationToken);
+
     Task BeginTransaction();
 
     Task CommitTransaction();
